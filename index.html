@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iPhone 15 Pro Giveaway</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0;font-family:Inter,system-ui,Arial,sans-serif}
+    body{background:radial-gradient(1200px 600px at 50% -20%,#951B1B,#224F5C);color:#3BD158;min-height:100vh}
+    .wrap{max-width:420px;margin:0 auto;padding:20px}
+    .card{background:linear-gradient(180deg,#0f0f0f,#070707);border:1px solid #222;border-radius:18px;box-shadow:0 20px 40px rgba(0,0,0,.6);overflow:hidden}
+    .hero{padding:22px;text-align:center}
+    .badge{display:inline-block;background:#0a84ff;color:#fff;border-radius:999px;padding:6px 12px;font-size:12px;margin-bottom:10px}
+    h1{font-size:26px;margin:10px 0}
+    .sub{opacity:.85;font-size:14px}
+    .img{display:flex;justify-content:center;padding:10px 0}
+    .img img{max-width:100%;height:auto;filter:drop-shadow(0 10px 30px rgba(0,0,0,.7))}
+    .steps{padding:16px 20px}
+    .step{display:flex;gap:10px;margin-bottom:10px}
+    .num{width:22px;height:22px;border-radius:50%;background:#0a84ff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700}
+    .cta{padding:20px}
+    .btn{display:block;width:100%;text-align:center;background:linear-gradient(135deg,#0a84ff,#3b9cff);color:#fff;text-decoration:none;padding:16px;border-radius:14px;font-weight:700;letter-spacing:.3px}
+    .btn:active{transform:scale(.99)}
+    .trust{display:flex;justify-content:space-between;gap:10px;padding:0 20px 20px;font-size:12px;opacity:.8}
+    .timer{background:#111;border:1px dashed #333;border-radius:12px;padding:12px;text-align:center;margin:0 20px 20px}
+    .timer b{font-size:18px}
+    .foot{font-size:11px;opacity:.6;padding:16px 20px 20px;line-height:1.4}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="hero">
+        <span class="badge">Limited Giveaway</span>
+        <h1>Win an iPhone 15 Pro</h1>
+        <p class="sub">Complete a short verification to participate</p>
+        <div class="img">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB2-ELmqM71wlVspaVHoqsPxWthpmqogw2cidGLjiJuw&s=10" alt="iPhone 15 Pro" />
+        </div>
+      </div>
+
+      <div class="timer">
+        Participate in <b id="t">(Loading...)</b>
+      </div>
+
+      <div class="steps">
+        <div class="step"><div class="num">1</div><div>Confirm eligibility (US only)</div></div>
+        <div class="step"><div class="num">2</div><div>Complete the secure form</div></div>
+        <div class="step"><div class="num">3</div><div>See if you qualify</div></div>
+      </div>
+
+      <div class="cta">
+        <a class="btn" href="https://www.gn3atrk.com/RKTD5G9/4MJRWZK/">Check Eligibility</a>
+      </div>
+
+      <div class="trust">
+        <div>🔒 Secure</div>
+        <div>🇺🇸 US Only</div>
+        <div>⚡ Fast</div>
+      </div>
+
+      <div class="foot">
+        &copy; All rights reserve
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let s=300;const el=document.getElementById('t');
+    setInterval(()=>{if(s<=0)return; s--; const m=String(Math.floor(s/60)).padStart(2,'0'); const ss=String(s%60).padStart(2,'0'); el.textContent=`${m}:${ss}...`},1000);
+  </script>
+</body>
+</html>
